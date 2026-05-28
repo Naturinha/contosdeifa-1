@@ -418,3 +418,158 @@ text-align: center;
   }
 
 }
+/*Update Responsive*/
+/* Melhorias de responsividade para os jogos */
+
+/* Ajustes gerais para a seção de jogos */
+#jogos {
+    overflow-y: auto; /* Permite scroll se necessário */
+    padding: 50px 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Ajustes para os itens do portfolio */
+.portfolio-item {
+    margin-bottom: 30px;
+    padding: 0 10px;
+}
+
+.img-portfolio {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.img-portfolio:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-item h4 {
+    font-size: 2.2em;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 992px) {
+    .portfolio-item h4 {
+        font-size: 2em;
+        margin-top: -35px;
+    }
+    
+    .service-item p {
+        font-size: 1.2em;
+    }
+    
+    i.service-icon {
+        width: 100px;
+        height: 100px;
+        line-height: 96px;
+        font-size: 40px;
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    #jogos {
+        padding: 30px 0;
+    }
+    
+    .portfolio-item {
+        margin-bottom: 40px;
+    }
+    
+    .portfolio-item h4 {
+        font-size: 1.8em;
+        margin-top: -30px;
+    }
+    
+    /* Ajuste para colunas em celular */
+    .col-xs-12 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    /* Ajuste para os ícones de serviço */
+    i.service-icon {
+        width: 80px;
+        height: 80px;
+        line-height: 76px;
+        font-size: 32px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    .service-item p {
+        font-size: 1em;
+    }
+    
+    /* Ajuste para o Facebook box */
+    .fb-like-box {
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Responsividade para celulares pequenos */
+@media (max-width: 480px) {
+    .portfolio-item h4 {
+        font-size: 1.5em;
+        margin-top: -25px;
+    }
+    
+    .vert-text h1 {
+        font-size: 4em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    i.service-icon {
+        width: 60px;
+        height: 60px;
+        line-height: 56px;
+        font-size: 24px;
+    }
+}
+
+/* Melhorias no scroll e visualização */
+#jogos::-webkit-scrollbar {
+    width: 8px;
+}
+
+#jogos::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+}
+
+#jogos::-webkit-scrollbar-thumb {
+    background: rgba(255,235,148,0.6);
+    border-radius: 4px;
+}
+
+#jogos::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,235,148,0.9);
+}
+
+/* Ajuste para centralização dos itens quando houver apenas 2 por linha */
+@media (min-width: 768px) and (max-width: 992px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
